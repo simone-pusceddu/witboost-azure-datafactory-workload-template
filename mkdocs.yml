@@ -1,0 +1,8 @@
+site_name: "Azure Data Factory Template"
+site_description: "Create an Azure Data Factory using this template"
+
+nav:
+  - Template Usage: index.md
+
+plugins:
+  - techdocs-core

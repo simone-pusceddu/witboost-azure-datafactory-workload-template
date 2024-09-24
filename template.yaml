@@ -11,6 +11,7 @@ metadata:
     - azuredevops
     - workload
 spec:
+  generates: componenttype:default/workload
   owner: agilelab
   type: workload
   parameters:

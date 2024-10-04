@@ -1,12 +1,12 @@
-id:   string
-kind: string & =~"(?i)^(dataproduct)$"
+id!:   string
+kind!: string & =~"(?i)^(dataproduct)$"
 components: [#Component, ...#Component]
 
 #Component: {
-	id:                       string
-	kind:                     string & =~"(?i)^(outputport|workload|storage|observability)$"
-	useCaseTemplateId:        string
-	infrastructureTemplateId: string
+	id!:                       string
+	kind!:                     string & =~"(?i)^(outputport|workload|storage|observability)$"
+	useCaseTemplateId!:        string
+	infrastructureTemplateId!: string
 	...
 }
 

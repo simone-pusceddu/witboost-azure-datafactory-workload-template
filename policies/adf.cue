@@ -5,10 +5,10 @@ kind!:                     "workload"
 version!:                  string
 infrastructureTemplateId!: string
 useCaseTemplateId!:        string
-platform:                  "Azure"
-technology:                "Data Factory"
-workloadType:              "batch"
-connectionType:            "DataPipeline"
+platform!:                 "Azure"
+technology!:               "Data Factory"
+workloadType!:             "batch"
+connectionType!:           "DataPipeline"
 tags: [...#OM_Tag]
 dependsOn: [...string]
 readsFrom: [...string]
@@ -24,10 +24,11 @@ specific: {
 #AzureNameRestrictions: =~"[^\\\/:*?\"<>;#${},+=\\[\\]_.][^\\\/:*?\"<>;#${},+=\\[\\]]{,62}[^\\\/:*?\"<>;#${},+=\\[\\].]"
 
 #OM_Tag: {
-	tagFQN:       string
+	tagFQN!:      string
 	description?: string | null
-	source:       string & =~"(?i)^(Tag|Glossary)$"
-	labelType:    string & =~"(?i)^(Manual|Propagated|Automated|Derived)$"
-	state:        string & =~"(?i)^(Suggested|Confirmed)$"
+	source!:      string & =~"(?i)^(Tag|Glossary)$"
+	labelType!:   string & =~"(?i)^(Manual|Propagated|Automated|Derived)$"
+	state!:       string & =~"(?i)^(Suggested|Confirmed)$"
 	href?:        string | null
+	...
 }

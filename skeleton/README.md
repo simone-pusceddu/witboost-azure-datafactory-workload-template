@@ -7,7 +7,7 @@
 
 Deploy this component to create a Data Factory workspace backed by an Azure DevOps repository
 
-Refer to the [witboost Starter Kit repository](https://github.com/agile-lab-dev/witboost-starter-kit) for information on the Specific Provisioner that can be used to deploy components created with this Template.
+Refer to the [Witboost Starter Kit repository](https://github.com/agile-lab-dev/witboost-starter-kit) for information on the Tech Adapter that can be used to deploy components created with this Template.
 
 ### What's a Workload
 

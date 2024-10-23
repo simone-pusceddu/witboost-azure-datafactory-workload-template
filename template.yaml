@@ -31,10 +31,6 @@ spec:
           default: Azure Data Factory
           ui:options:
             allowArbitraryValues: true
-        fullyQualifiedName:
-          title: Fully Qualified Name
-          type: string
-          description: Component fully qualified name
         description:
           title: Description
           type: string
@@ -95,6 +91,22 @@ spec:
             type: string
             ui:field: ReadsFromPicker
           description: This is filled only for DataPipeline workloads and it represents the list of output ports or external systems that is reading
+        domainName:
+          type: string
+          ui:field: EntitySelectionPicker
+          ui:fieldName: domain
+          ui:property: spec.mesh.name
+          ui:options:
+            allowArbitraryValues: false
+          ui:widget: hidden
+        dataproductName:
+          type: string
+          ui:field: EntitySelectionPicker
+          ui:fieldName: dataproduct
+          ui:property: spec.mesh.name
+          ui:options:
+            allowArbitraryValues: false
+          ui:widget: hidden
 
     - title: Azure Data Factory details
       required:
@@ -122,7 +134,8 @@ spec:
         targetPath: .
         values:
           name: '${{ parameters.name }}'
-          fullyQualifiedName: '${{ parameters.fullyQualifiedName }}'
+          domainName: '${{ parameters.domainName }}'
+          dataproductName: '${{ parameters.dataproductName }}'
           description: '${{ parameters.description }}'
           domain: '${{ parameters.domain }}'
           dataproduct: '${{ parameters.dataproduct }}'

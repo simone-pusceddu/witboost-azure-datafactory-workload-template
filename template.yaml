@@ -1,8 +1,8 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: datafactory-workload-template.1
-  title: Azure Data Factory
+  name: datafactory-workload-template-skeleton
+  title: Azure Data Factory (Skeleton)
   description: Creates an Azure Data Factory instance hosted on Azure DevOps
   mesh:
     icon: https://logowik.com/content/uploads/images/azure-data-factory2539.jpg

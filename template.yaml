@@ -150,7 +150,7 @@ spec:
           infrastructureTemplateId: urn:dmb:itm:azure-datafactory-provisioner:0
           useCaseTemplateVersion: 0.0.0
           organizationName: AgileDMBSandbox
-          destination: &destination 'dev.azure.com?organization=AgileDMBSandbox&owner=${{ parameters.identifier.split(".")[0] | replace(r/[^\w]/g, "") }}_${{ parameters.identifier.split(".")[1] | replace(r/[^\w]/g, "") }}_${{ parameters.identifier.split(".")[2] | replace(r/[^\w]/g, "") }}&repo=${{ parameters.identifier.split(".")[3] | replace(r/[^\w]/g, "") }}'
+          destination: &destination 'gitlab.com?owner=simone.pusceddu&repo=${{ parameters.name.split(" ") | join("") | lower }}'
 
     - id: publish
       name: Publish

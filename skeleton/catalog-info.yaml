@@ -1,3 +1,4 @@
+%SKELETON
 {% set domainNameNormalized = values.identifier.split(".")[0] | replace(r/[^\w]/g, "") %}
 {% set dataProductNameNormalized = values.identifier.split(".")[1] | replace(r/[^\w]/g, "") %}
 {% set dataProductMajorVersion = values.identifier.split(".")[2] | replace(r/[^\w]/g, "") %}

@@ -1,5 +1,5 @@
 # it is important to use this apiVersion
-apiVersion: witboost.com/v1
+apiVersion: witboost.com/v2
 kind: EditTemplate
 metadata:
   name: edit-datafactory-workload-template.1
